@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
+   "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+  <card id="c1" title="Hello WML">
+    <p>
+      Hello WML!!!<br/><br/>
+    </p>
+    <do type="accept" label="Go to Card 2">
+      <go href="#c2"/>
+    </do>
+    <do type="accept" label="Go to Card 3">
+      <go href="#c3"/>
+    </do>
+    <do type="accept" label="Go to Card 4">
+      <go href="#c4"/>
+    </do>
+  </card>
+
+  <card id="c2" title="Card 2">
+    <p>
+      <em>Card 2</em><br/><br/>
+      <a href="#c1">Back</a>
+    </p>
+  </card>
+
+  <card id="c3" title="Card 3">
+    <p>
+      <em>Card 3</em><br/><br/>
+      <a href="#c1">Back</a>
+    </p>
+  </card>
+
+  <card id="c4" title="Card 4">
+    <p>
+      <em>Card 4</em><br/><br/>
+      <a href="#c1">Back</a>
+    </p>
+  </card>
+</wml>

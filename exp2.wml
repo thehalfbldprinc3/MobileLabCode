@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
+   "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+  <card id="externalLinks" title="External Links">
+    <p>
+      <anchor>Hello WML Page
+        <go href="c1.wml"/>
+      </anchor><br/>
+
+      <anchor>WinWap
+        <go href="http://wap.winwap.com"/>
+      </anchor><br/>
+
+      <anchor>News
+        <go href="http://portal.winwap.com/news.php"/>
+      </anchor><br/>
+
+      <anchor>Entertainment
+        <go href="http://portal.winwap.com/fun.php"/>
+      </anchor>
+    </p>
+  </card>
+</wml>

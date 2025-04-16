@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
+ "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+  <card id="Sum" title="Sum of Two Numbers">
+    <p>
+      Enter the first number:<br/>
+      <input type="text" name="nam"/><br/><br/>
+
+      Enter the second number:<br/>
+      <input type="text" name="nam1"/><br/><br/>
+
+      Result: $(result)<br/><br/>
+
+      <do type="accept" label="Calculate Sum">
+        <go href="exp9.wmls#root()"/>
+      </do>
+    </p>
+  </card>
+</wml>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
+   "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+  <card title="Table">
+    <p>
+      <b>Rollno&nbsp;&nbsp;&nbsp;Name</b><br/>
+      -------------------<br/>
+      001&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ABC<br/>
+      002&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PQR<br/>
+      003&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STU<br/>
+      004&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VWX<br/>
+    </p>
+  </card>
+</wml>

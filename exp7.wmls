@@ -1,0 +1,6 @@
+extern function hello()
+{
+  var message = "Hello from WMLScript!";
+  WMLBrowser.setVar("message", message);
+  WMLBrowser.refresh();
+}

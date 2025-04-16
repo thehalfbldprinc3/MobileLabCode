@@ -1,0 +1,9 @@
+extern function root()
+{
+  var n = Lang.parseInt(WMLBrowser.getVar("nam"));
+  var m = Lang.parseInt(WMLBrowser.getVar("nam1"));
+  var s = n + m;
+
+  WMLBrowser.setVar("result", s);
+  WMLBrowser.refresh();
+}

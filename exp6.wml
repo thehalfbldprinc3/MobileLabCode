@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
+   "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+  <!-- Intro Card -->
+  <card id="start" title="Rules">
+    <p>
+      You have to select an option within 2 seconds.<br/><br/>
+      <anchor>
+        Click Here to Start
+        <go href="#selection"/>
+      </anchor>
+    </p>
+  </card>
+
+  <!-- Selection Card with Timer and onpick -->
+  <card id="selection" title="Selection">
+    <p>
+      Select an option:
+      <select title="selection" name="selection_list">
+        <option onpick="#One">1</option>
+        <option onpick="#Two">2</option>
+      </select>
+    </p>
+
+    <onevent type="ontimer">
+      <go href="#over"/>
+    </onevent>
+    <timer value="20"/> <!-- 2 seconds -->
+  </card>
+
+  <!-- Option 1 Card -->
+  <card id="One" title="One">
+    <p>You selected 1.</p>
+  </card>
+
+  <!-- Option 2 Card -->
+  <card id="Two" title="Two">
+    <p>You selected 2.</p>
+  </card>
+
+  <!-- Timeout Card -->
+  <card id="over" title="Over">
+    <p>Time's Up!</p>
+  </card>
+</wml>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
+ "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+  <card id="abc" title="Calculator">
+    <p>
+      Enter the first number:<br/>
+      <input type="text" name="nam"/><br/><br/>
+
+      Enter the second number:<br/>
+      <input type="text" name="nam1"/><br/><br/>
+
+      Result: $(result)<br/><br/>
+
+      <table columns="2">
+        <tr>
+          <td><do type="accept" label="ADD +"><go href="exp10.wmls#add()"/></do></td>
+          <td><do type="accept" label="SUB -"><go href="exp10.wmls#sub()"/></do></td>
+        </tr>
+        <tr>
+          <td><do type="accept" label="MUL ×"><go href="exp10.wmls#mul()"/></do></td>
+          <td><do type="accept" label="DIV ÷"><go href="exp10.wmls#divi()"/></do></td>
+        </tr>
+        <tr>
+          <td><do type="accept" label="POW ^"><go href="exp10.wmls#pow()"/></do></td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </p>
+  </card>
+</wml>

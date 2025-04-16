@@ -1,0 +1,45 @@
+extern function add() {
+    var n = Lang.parseInt(WMLBrowser.getVar("nam"));
+    var m = Lang.parseInt(WMLBrowser.getVar("nam1"));
+    var s = n + m;
+    WMLBrowser.setVar("result", s);
+    WMLBrowser.refresh();
+  }
+  
+  extern function sub() {
+    var n = Lang.parseInt(WMLBrowser.getVar("nam"));
+    var m = Lang.parseInt(WMLBrowser.getVar("nam1"));
+    var s = n - m;
+    WMLBrowser.setVar("result", s);
+    WMLBrowser.refresh();
+  }
+  
+  extern function mul() {
+    var n = Lang.parseInt(WMLBrowser.getVar("nam"));
+    var m = Lang.parseInt(WMLBrowser.getVar("nam1"));
+    var s = n * m;
+    WMLBrowser.setVar("result", s);
+    WMLBrowser.refresh();
+  }
+  
+  extern function divi() {
+    var n = Lang.parseInt(WMLBrowser.getVar("nam"));
+    var m = Lang.parseInt(WMLBrowser.getVar("nam1"));
+  
+    if (m == 0) {
+      WMLBrowser.setVar("result", "Error: Divide by 0");
+    } else {
+      var s = n / m;
+      WMLBrowser.setVar("result", s);
+    }
+  
+    WMLBrowser.refresh();
+  }
+  
+  extern function pow() {
+    var n = Lang.parseFloat(WMLBrowser.getVar("nam"));
+    var m = Lang.parseFloat(WMLBrowser.getVar("nam1"));
+    var s = Float.pow(n, m);
+    WMLBrowser.setVar("result", s);
+    WMLBrowser.refresh();
+  }

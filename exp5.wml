@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
+   "http://www.wapforum.org/DTD/wml_1.1.xml">
+
+<wml>
+  <card id="one" title="Form Input">
+    <p>
+      Name:<input name="name" type="text"/><br/><br/>
+      Roll No:<input name="roll" type="text"/><br/><br/>
+      Select Year:<br/>
+      <select name="year">
+        <option value="I">I</option>
+        <option value="II">II</option>
+        <option value="III">III</option>
+        <option value="IV">IV</option>
+      </select>
+    </p>
+    <do type="accept" label="Submit">
+      <go href="#two" method="post">
+        <postfield name="name" value="$(name)"/>
+        <postfield name="roll" value="$(roll)"/>
+        <postfield name="year" value="$(year)"/>
+      </go>
+    </do>
+  </card>
+
+  <card id="two" title="Submitted Info">
+    <p>
+      Hello <b>$(name)</b>!<br/>
+      Your roll number is <b>$(roll)</b>.<br/>
+      Your year is: <b>$(year)</b>.
+    </p>
+    <do type="accept" label="Back">
+      <go href="#one"/>
+    </do>
+  </card>
+</wml>
