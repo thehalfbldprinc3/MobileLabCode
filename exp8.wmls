@@ -1,17 +1,6 @@
-<?xml version="1.0"?>
-<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN"
- "http://www.wapforum.org/DTD/wml_1.1.xml">
-<wml>
-  <card id="abc" title="Square Calculator">
-    <p>
-      Enter the number:<br/>
-      <input type="text" name="nam"/><br/><br/>
-
-      <do type="accept" label="Calculate">
-        <go href="exp8.wmls#sq($(nam))"/>
-      </do>
-
-      <br/>The Result is: $(message)
-    </p>
-  </card>
-</wml>
+extern function sq(n)
+{
+  var num = WMLBrowser.getVar("n");
+  var result = num * num;
+  WMLBrowser.setVar("message", result);
+}
